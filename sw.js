@@ -1,8 +1,11 @@
-const CACHE = 'bloom-v2';
-const SHELL = ['/', '/index.html', '/style.css', '/app.js', '/manifest.json', '/icons/icon-192.png', '/icons/icon-512.png'];
-
+const CACHE = 'bloom-v3';
+const ASSETS = [
+  '/', '/index.html', '/style.css', '/app.js', '/manifest.json',
+  '/images/stage1.png', '/images/stage2.png', '/images/stage3.png',
+  '/images/stage4.png', '/images/stage5.png'
+];
 self.addEventListener('install', e => {
-  e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL)));
+  e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)));
   self.skipWaiting();
 });
 self.addEventListener('activate', e => {

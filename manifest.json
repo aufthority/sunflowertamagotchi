@@ -1,15 +1,15 @@
 {
   "name": "Bloom — Habit Garden",
   "short_name": "Bloom",
-  "description": "Grow your habits like a tamagotchi sunflower",
+  "description": "Grow your habits. Watch your sunflower bloom.",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
-  "background_color": "#FEF9F0",
-  "theme_color": "#2E5C24",
+  "background_color": "#F5EFE4",
+  "theme_color": "#3B6B1A",
   "icons": [
-    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
-    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+    { "src": "images/stage5.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "images/stage5.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
   ],
   "categories": ["health", "lifestyle", "productivity"]
 }
